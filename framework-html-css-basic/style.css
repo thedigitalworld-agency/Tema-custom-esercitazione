@@ -1,0 +1,397 @@
+/* ! Reset */
+body,
+html {
+    font-family: 'Intro', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    height: auto;
+}
+
+/* ! Title system */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.6rem;
+}
+
+a {
+    text-decoration: none
+}
+
+/* ! Button system */
+.button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 25px;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.button--dark {
+    background: #333;
+    color: #fff;
+}
+
+.button--dark:hover {
+    background: #444;
+}
+
+.button--light {
+    background: #fff;
+    color: #333;
+}
+
+.button--light:hover {
+    background: #e9e9e9;
+}
+
+/* ! Components */
+.primary--header {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary--header a {
+    color: #fff;
+    padding: 15px;
+}
+
+.primary--header .primary--header__menu li {
+    display: inline-block;
+}
+
+.primary--header .primary--header__menu {
+    margin-bottom: 0;
+}
+
+.primary--header .primary--header__logo {
+    font-weight: bold;
+}
+
+.cover{
+    background: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover--100vh {
+    height: 100vh;
+}
+
+.cover--50vh {
+    height: 50vh;
+}
+
+.cover--dark{
+    color: #fff;
+    background-color: #333;
+}
+
+.card{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.primary--footer{
+    background-color: #eee;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! Grid System */
+.grid {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1250px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.grid--sm {
+    max-width: 900px;
+}
+
+.grid--center {
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+}
+
+[class*='col-'] {
+    position: relative;
+    padding: 0 15px;
+}
+
+.grid .grid [class*='col-'] {
+    padding: 0px;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-33 {
+    width: 33.33%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .tab-20 {
+        width: 20%;
+    }
+
+    .tab-25 {
+        width: 25%;
+    }
+
+    .tab-33 {
+        width: 33.33%;
+    }
+
+    .tab-50 {
+        width: 50%;
+    }
+
+    .tab-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    [class*='col-'] {
+        width: 100%;
+    }
+
+    .sma-20 {
+        width: 20%;
+    }
+
+    .sma-25 {
+        width: 25%;
+    }
+
+    .sma-33 {
+        width: 33.33%;
+    }
+
+    .sma-50 {
+        width: 50%;
+    }
+
+    .sma-100 {
+        width: 100%;
+    }
+}
+
+/* ! Helpers */
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.p-6 {
+    padding: 6rem;
+}
+
+.w-100{
+    width: 100%;
+}
